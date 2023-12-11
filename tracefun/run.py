@@ -1,5 +1,5 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+# os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import sys
 import shutil
 import datetime
@@ -11,16 +11,17 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 runs_path = os.path.join(current_dir, 'runs')
 eval_path = os.path.join(current_dir, 'evaluation')
 
-datasets_dir = '..'
-outputs_dir = '..'
+datasets_dir = 'Your datasets_dir'
+outputs_dir = 'Your outputs_dir'
+datasets = ['flask', 'pgcli', 'keras', 'scrapy']
 
 
 def main():
-    dname = 'flask'
-    epochs = 200
-    for lab_frac in ['_num10', 10, 30, 50, 70]:
-        for group in range(1, 6):
-            exec(dname, str(group), lab_frac, epochs=epochs)
+    for dname in datasets:
+        epochs = 200
+        for lab_frac in ['_num10', 10, 30, 50, 70]:
+            for group in range(1, 6):
+                exec(dname, str(group), lab_frac, epochs=epochs)
 
 def exec(dname, group, lab_frac, epochs):
     desc = f'dataset: {dname}, group: {group}, labfrac: {lab_frac}, epochs: {epochs}'
