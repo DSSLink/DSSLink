@@ -73,3 +73,22 @@ The number of models we trained is large, which you can obtain them from the fol
 - [DSSLink Trained Models for T-BERT 2](https://zenodo.org/doi/10.5281/zenodo.10305257)
 - [DSSLink Trained Models for BTLink 1](https://zenodo.org/doi/10.5281/zenodo.10279915)
 - [DSSLink Trained Models for BTLink 2](https://zenodo.org/doi/10.5281/zenodo.10294818)
+
+
+### Citation
+```
+@article{ZHU2024112109,
+title = {Deep semi-supervised learning for recovering traceability links between issues and commits},
+journal = {Journal of Systems and Software},
+volume = {216},
+pages = {112109},
+year = {2024},
+issn = {0164-1212},
+doi = {https://doi.org/10.1016/j.jss.2024.112109},
+url = {https://www.sciencedirect.com/science/article/pii/S0164121224001547},
+author = {Jianfei Zhu and Guanping Xiao and Zheng Zheng and Yulei Sui},
+keywords = {Traceability links recovery, Deep semi-supervised learning, Self-training, Label propagation, Issue and commit}
+}
+```
+
+  
